@@ -1,0 +1,330 @@
+  /* Container for the login page */
+  .Login-Container {
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E8E8E8;
+  }
+
+  /* Login form styling */
+  .form {
+    background-color: #fff;
+    padding: 1rem;
+    max-width: 370px;
+    border-radius: 0.5rem;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.05);
+  }
+
+  .form-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-align: center;
+    color: #000;
+    margin-bottom: 1rem;
+  }
+
+  .input-container {
+    margin-bottom: 1rem;
+    position: relative;
+  }
+
+  .input-container input {
+    background-color: #fff;
+    padding: 1rem;
+    font-size: 0.875rem;
+    width: 100%;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    font-family: "Poppins", sans-serif;
+  }
+
+  .submit {
+    display: block;
+    padding: 0.75rem;
+    width: 100%;
+    background-color: #4F46E5;
+    color: #fff;
+    font-size: 0.875rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+  }
+
+  /* Signup link styling */
+  .signup-link {
+    color: #6B7280;
+    font-size: 0.75rem;
+    text-align: center;
+  }
+
+  .signup-link a {
+    text-decoration: underline;
+  }
+
+  /* Responsive Design */
+  @media screen and (max-width: 360px) {
+    .Login-Container {
+      padding: 12%;
+    }
+
+    .form-title {
+      font-size: 1.15rem;
+    }
+  }
+
+  /* Welcome Section */
+  .WelcomeContainer {
+    width: 100%;
+    height: auto;
+    padding-top: 9px;
+  }
+
+  .WelcomeBox {
+    margin: 3%;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.875rem;
+    padding: 2%;
+    background-color: #4F46E5;
+    color: #fff;
+    border-radius: 8px;
+    position: sticky;
+    top: 10px;
+  }
+
+  /* File Upload Section */
+  .controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .imgupload {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+#caption{
+  font-size: 22px;
+  padding: 5px;
+  text-align: center;
+  border-radius: 10px;
+  border: transparent;
+}
+  .caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 22px;
+    padding: 5px;
+    text-align: center;
+    box-sizing: border-box;
+  }
+  .controls button {
+    font-size: 18px;
+    padding: 0.5rem 1rem;
+    background-color: #ffd900;
+    color: #000;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .controls button:last-child {
+    background-color: #2BD686;
+    font-size: 18px;
+    padding: 0.5rem 1.5rem;
+    border-radius: 9px;
+  }
+
+  /* Scrapbook Container */
+  .scrapbook {
+    margin: 3%;
+    padding: 3%;
+    height: auto;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 9px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+  }
+  .scrapbook {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping of images */
+    gap: 10px;
+    justify-content: flex-start;
+  }  
+
+  /* The overlay background for the emoji picker */
+  .emoji-popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+
+  /* Emoji picker content inside the popup */
+  .emoji-popup-content {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Ensure emoji popup is visible and correctly aligned */
+  .emoji-picker-react {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  /* Optional: Style the close button for the emoji picker */
+  .emoji-popup-overlay {
+    cursor: pointer;
+  }
+
+  .emoji-popup-content {
+    cursor: default;
+  }
+  .image-container {
+    display: inline-block;
+    margin: 5px;
+    position: relative;
+  }
+  
+  .image-container img {
+    width: 180px;  /* Fixed image width */
+    height: 180px; /* Fixed image height */
+    object-fit: cover; /* Ensures the image is not stretched/distorted */
+  }
+  /* Floating Chat Button */
+/* Floating Chat Button */
+.floating-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #4F46E5;
+  color: white;
+  border-radius: 50%;
+  padding: 1rem;
+  font-size: 2rem;
+  cursor: pointer;
+  border: none;
+}
+
+.chat-window {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  width: 450px;
+  max-height: 400px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-header {
+  background-color: #4F46E5;
+  padding: 10px;
+  color: #fff;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.close-button {
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+.chat-input{
+  padding: 2%;
+}
+.chat-input input {
+  width: 65%;
+  padding: 10px;
+  font-size: 0.9rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.chat-input button {
+  width: 12%;
+  padding: 10px;
+  background-color: #4F46E5;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.chat-content {
+  padding: 10px;
+  overflow-y: scroll;
+  flex-grow: 1;
+  max-height: 250px;
+  font-size: 1rem;
+}
+#containerparagraph{
+  background: #2BD686;
+  padding: 1%;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  color: #000;
+  margin-left: 2%;
+  margin-right: 2%;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+  /* Responsive Styling for Scrapbook Controls */
+  @media (max-width: 768px) {
+    .WelcomeBox {
+      font-size: 1.375rem;
+      padding: 3%;
+    }
+
+    .controls {
+      gap: 0.5rem;
+      justify-content: space-between;
+    }
+
+    .imgupload,
+    .controls button {
+      font-size: 1rem;
+      width: 100%;
+      margin-bottom: 0.5rem;
+    }
+
+    .controls button:last-child {
+      background-color: #3FB584;
+    }
+    .chat-window {
+      width: 90%;
+
+    }
+    .chat-input button{
+      width: 20%;
+    }
+
+  }
