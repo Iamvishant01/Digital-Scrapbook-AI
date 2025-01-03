@@ -15,7 +15,7 @@ To run the Digital Scrapbook AI locally, follow these steps:
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/yourusername/digital-scrapbook-ai.git
+   git clone https://github.com/Iamvishant01/Digital-Scrapbook-AI
    cd digital-scrapbook-ai
 2. **Install dependencies**
    ```bash
