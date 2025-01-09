@@ -1,5 +1,7 @@
 # Digital Scrapbook AI 📖✨
 
+[![Live Demo](https://img.shields.io/badge/Live-Demo-blue?style=for-the-badge)](https://digitalscrapbookai.vercel.app/)
+
 ## Overview 🌟
 Digital Scrapbook AI is an interactive, web-based React application that lets users create personalized digital scrapbooks 🖼️. With features like image uploads 📸, sticker additions 🧸, and downloadable PDFs 📄, users can capture memories and express creativity in a fun way. The app also integrates AI 🤖 to generate captions, adding a unique layer of creativity and convenience. Stay tuned for more exciting features!
 
